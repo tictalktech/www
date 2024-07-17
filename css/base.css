@@ -1,0 +1,83 @@
+/* 重设浏览器默认样式 */
+
+/* 通用样式 */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 链接 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 表格 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* 表单 */
+input, button, textarea, select {
+  font-family: "思源黑体", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+/* 针对所有浏览器隐藏滚动条，但保留滚动功能 */
+::-webkit-scrollbar {
+    display: none; /* 对于WebKit浏览器（如Chrome, Safari等） */
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 针对火狐浏览器隐藏滚动条 */
+* {
+    scrollbar-width: none;  /* 对于Firefox浏览器 */
+}
+
+/* 针对IE和Edge浏览器隐藏滚动条 */
+-ms-overflow-style: none;  /* 对于Internet Explorer和Edge浏览器 */
